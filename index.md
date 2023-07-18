@@ -1,6 +1,9 @@
 # 타임페이 커뮤니티 (2023 다학제간캡스톤디자인 9팀)  
+![타임페이 커뮤니티 9조 포스터 (1)-1](https://github.com/kookmin-sw/capstone-2023-09/assets/55117730/f831cdbe-6622-4e54-bfe0-13a2e0ccaf53)
 
-![image (2)](https://user-images.githubusercontent.com/54922639/229401459-e46e2962-ff23-48a9-842b-7e3a763c8c84.png)
+# 0. 앱 다운로드 
+[다운로드 링크](https://drive.google.com/drive/u/0/folders/19Ti0CzIR0v4v1M_HOGXD6cHzeTVgPgKd)
+
 
 # 1. 프로젝트 소개
 
@@ -20,8 +23,15 @@
 
 타임페이는 이런 문제를 해결하는 시스템을 개발해 보다 체계적이고 자동화된 시간 은행 운영을 목표로 하는 프로젝트이다.  
 
-# 2. 소개 영상    
+# 2. 영상    
+
+# 소개 영상    
 [![Video Label](https://img.youtube.com/vi/1_zx2Ubk0jU/0.jpg)](https://youtu.be/1_zx2Ubk0jU) 
+# 시연 영상  
+[![image](https://github.com/kookmin-sw/capstone-2023-09/assets/55117730/35a8fe3c-1bf6-4a5d-b46e-b51c55a5627a)](https://youtu.be/_sWX-izpOYQ)
+
+
+
 
 # 3. 팀 소개
   
@@ -31,66 +41,66 @@
 
 ```
 💡 **1687
-✉️ suyunup57@gmail.com
-🔥 #팀장 #UXUI디자인 #Frontend Admin
+📒 suyunup57@gmail.com
+🔥 #팀장 #UXUI디자인 #Frontend Admin, User #Flutter Android 리드/개발
 ```
 
 **김하연  🐣**
 
 ```
 💡 **1581
-✉️ iioo3356@gmail.com
-🔥 #기획 #Frontend 리드/개발 - User, Admin
+📒 iioo3356@gmail.com
+🔥 #기획 #Frontend 리드/개발 - User, Admin #Flutter Android 
 ```
 
 **이진 🐻‍❄️**
 
 ```
 💡 **1648
-✉️ leejin684@gmail.com
+📒 leejin684@gmail.com
 🔥 #기획 #Frontend
 ```
 
-**황세윤** 🐑
+**황세윤 🐑** 
 
 ```
 💡 **3167
-✉️ yoony0193@kookmin.ac.kr
+📒 yoony0193@kookmin.ac.kr
 🔥 #기획 #Frontend
 ```
 
 ### **Backend**
 
-**이용훈**🦒
+**이용훈 🦒**
 
 ```
 💡 **5301
-✉️ cjswl1357@kookmin.ac.kr
-🔥 #Backend
+📒 cjswl1357@kookmin.ac.kr
+🔥 #Backend # 게시글 서버 개발
 ```
 
 **김명환 🐯**
 
 ```
 💡 **1582
-✉️ myeonghwan2@kookmin.ac.kr
-🔥 #Backend #로그인 및 유저 관련 개발
+📒 myeonghwan2@kookmin.ac.kr
+🔥 #기획 #Backend #로그인 및 유저 관련 개발
 ```
 
-**김준영** 🦈
+**김준영 🦈** 
 
 ```
 💡 **3049
-✉️ mrgentle1@kookmin.ac.kr
-🔥 #Backend
+📒 mrgentle1@kookmin.ac.kr
+🔥 #Backend # 데이터베이스 서버 관련
 ```
 
-**서준원** 🦅
+**서준원 🦅** 
 
 ```
-💡 **3384
-✉️ wnsdnjs700@gmail.com
-🔥 #Backend
+💡 **3384
+📒 wnsdnjs700@gmail.com
+🔥 #Backend #기관 유저 관련 서버 개발 #관리자 서버 개발
 ```   
 
 # 4. 기술 스택
@@ -106,7 +116,8 @@
     </tr>
     <tr>
       <td><strong>App</strong></td>
-      <td><img alt="RED" src ="https://img.shields.io/badge/AndroidStudio-3DDC84.svg?&style=for-the-badge&logo=AndroidStudio&logoColor=white"/></td>
+      <td><img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"/></td>
+    </tr>  
     </tr>
     <tr>
       <td><strong>Programming Language</strong></td>
@@ -169,22 +180,97 @@
 
 
 
-# 5. 사용법          
-추후 추가 예정
+# 5. 사용법     
+
+## 프론트엔드
+### 로컬 실행 방법
+
+프로젝트 레포지터리 클론
+
+` $ git clone https://github.com/kookmin-sw/capstone-2023-09.git `
+
+remote 갱신
+
+` $ git remote update`
+
+마스터 브랜치 이동
+
+` $ git checkout -t master branch`
+
+- 사용자 페이지 빌드
+	  사용자 페이지 디렉토리로 이동
+` $ cd ./capstone-2023-09/src/front-end/timepay-front`
+
+- 관리자 페이지 빌드
+관리자 페이지 디렉토리로 이동
+` $ cd ./capstone-2023-09/src/front-end/timepay-admin`
+
+디렉토리 이동후 yarn start 실행
+
+` $ yarn install`
+` $ yarn start`
+
+### 배포 방법
+빌드 시 yarn build 실행
+
+`$ yarn build `
+
+도커 이미지 빌드
+
+도커 허브에 푸쉬
+
+ssh로 ec2 인스턴스 접속
+
+도커 허브에서 이미지 pull
+
+도커 컨테이너 start
+
+위 과정을 github action을 통해 파이프라인을 구축하였습니다.
+
+## 앱 
+### 로컬 실행 방법
+vscode 사용
+
+앱 폴더 이동
+
+`$ cd /Users/hayeonkim/capstone-2023-09/src/app/flutter`
+
+디바이스 선택
+vscode 명령어 팔레트 -> Flutter: Select Device -> 안드로이드 애뮬레이터 선택
+main.dart 파일에서 start debugging
+
+## 백엔드
+### 서버 빌드
+프로젝트 레포지터리 클론
+
+`$ git clone https://github.com/kookmin-sw/capstone-2023-09.git`
+
+프로젝트 백엔드 브랜치로 이동
+
+`$ git checkout [backend branch]`
+
+작업 디렉토리로 이동
+
+`$ cd [backend branch]`
+
+도커 컨테이너 빌드
+
+`$ docker-compose up -d`
+
+
+작업한 내용을 github Action CI/CD에서 해당 브랜치 배포
+
+
 
 # 6. 시스템 구조도
-추후 추가 예정
+![Group 6 (2)](https://github.com/kookmin-sw/capstone-2023-09/assets/55117730/22227cda-5786-48d3-90db-1503a21e7ebf)
+
 
 # 7. 소개 자료
-
-링크 걸어둘 예정   
 - 📒 [Timepay Community 중간 발표 자료 PDF](https://docs.google.com/presentation/d/19nXZx3U4Oq5vQGxINCsUBJORwcco-KPZcU7yrmfJQTs/edit?usp=sharing)
-- 📒 Timepay Community 최종 발표 PDF
-- 📒 Timepay Community 포스터 PDF
+- 📒 [Timepay Community 최종 발표 PDF](https://www.miricanvas.com/v/122thst)
+- 📒 [Timepay Community 포스터 PDF](https://www.miricanvas.com/v/122u2yq)
 
 # 8. 문서 자료
-링크 걸어둘 예정 
 - 📒 [Figma](https://www.figma.com/file/VgaJP6q5Fygk1v46pwOoqR/TIMEPAY-1%EC%B0%A8)
-- 📒 ERD Cloud
-
-
+- 📒 [ERD Cloud](https://www.erdcloud.com/d/7aFYMSGJGveZsKX6g)

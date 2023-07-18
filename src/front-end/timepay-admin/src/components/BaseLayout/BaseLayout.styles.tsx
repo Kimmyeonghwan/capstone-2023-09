@@ -55,4 +55,8 @@ export const cssBaseLayoutStyle = css`
   .ant-layout-content {
     font-family: unset;
   }
+  .logoutBtn {
+    padding-right: 20px;
+    margin-left: auto;
+  }
 `;

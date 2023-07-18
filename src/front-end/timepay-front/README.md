@@ -5,13 +5,14 @@
 ### 로컬 실행
 
 ```shell
- yarn test
+ yarn install
+ yarn start
 ```
 
 ### 빌드
 
 ```shell
-yarn build
+ yarn build
 ```
 
 ## 프로젝트 구조
@@ -22,10 +23,10 @@ timepay-front
 ┣ src  
 ┃ ┣ api  
 ┃ ┃ ┣ hooks // react-query hooks  
-┃ ┃ ┗ interfaces  
-┃ ┣ assets  
-┃ ┃ ┣ images  
-┃ ┃ ┗ icons  
+┃ ┃ ┗ interfaces // types  
+┃ ┣ assets    
+┃ ┃ ┗ images    
+┃ ┃   ┗ icons  // images  
 ┃ ┣ components  
 ┃ ┣ hooks // custom hooks  
 ┃ ┣ pages  

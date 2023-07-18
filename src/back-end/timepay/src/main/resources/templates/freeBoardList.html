@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>FreeBoard List</title>
+</head>
+<body>
+<table>
+  <tr>
+    <th>id</th>
+    <th>title</th>
+    <th>writer</th>
+    <th>date</th>
+    <th>hits</th>
+  </tr>
+  <tr th:each="board: ${freeBoardList}">
+    <td th:text="${board.id}"></td>
+    <td><a th:href="@{|/board/free/${board.id}|}" th:text="${board.freeTitle}"></a></td>
+    <td th:text="${board.freeWriter}"></td>
+    <td th:text="*{#temporals.format(board.freeCreatedAt, 'yyyy-MM-dd HH:mm:ss')}"></td>
+    <td th:text="${board.freeBoardHits}"></td>
+  </tr>
+</table>
+<hr>
+<button onclick="freeBoardSave()">글작성</button>
+
+<script>
+  const freeBoardSave = () => {
+    location.href = "/board/free/save";
+  }
+</script>
+</body>
+</html>

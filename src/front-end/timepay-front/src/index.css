@@ -9,3 +9,66 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.time-picker-no-footer .ant-picker-footer {
+  display: none !important;
+}
+
+.big-post-dropdown a {
+  font-size: 21px;
+}
+
+.big-post-dropdown .ant-picker-content {
+  font-size: 21px;
+}
+
+.small-post-dropdown a {
+  font-size: 14px;
+}
+
+.small-post-dropdown .ant-picker-content {
+  font-size: 14px;
+}
+
+.small-post-dropdown .ant-btn {
+  padding: 0px;
+  color: rgba(0, 0, 0, 0.88);
+  height: max-content;
+}
+
+.big-post-dropdown .ant-btn {
+  padding: 0px !important;
+  color: rgba(0, 0, 0, 0.88);
+  height: max-content;
+  font-size: 21px;
+}
+
+.select-small .ant-select-item {
+  font-size: 14px;
+}
+
+.select-big .ant-select-item {
+  font-size: calc(14px * 1.5);
+}
+
+.donate-modal .ant-modal-body {
+  padding: 20px 0px;
+}
+
+.donate-modal .guide {
+  margin-bottom: 20px;
+  color: #df872d;
+  font-size: 13px;
+}
+
+.ant-progress {
+  margin: 0;
+}
+
+.applicantContent {
+  height: 80vh;
+}
+
+.ant-modal-confirm-btns .ant-btn-primary {
+  background-color: #f1af23;
+}

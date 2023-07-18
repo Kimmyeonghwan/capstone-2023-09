@@ -21,7 +21,10 @@ jobs:
         cd ./src/front-end/timepay-front
         yarn add craco-alias
         yarn build
-      shell: bash
+      env:
+        CI: false
+      shell:
+        bash
       
     ## docker build image
     - name: 도커 이미지 빌드
@@ -51,7 +54,8 @@ jobs:
           docker stop $(docker ps -a -q) 
           docker rm $(docker ps -a -q) 
           docker pull ${{ secrets.DOCKER_USERNAME }}/timepay_front
-          docker run -d -p 80:8080 --name tp_frontend ${{ secrets.DOCKER_USERNAME }}/timepay_front
+
+          docker run -d -p 80:80 --name tp_frontend ${{ secrets.DOCKER_USERNAME }}/timepay_front
 
 
   build-admin:
@@ -67,6 +71,9 @@ jobs:
         cd ./src/front-end/timepay-admin
         yarn add craco-alias
         yarn build
+      env:
+        CI: false
+
       shell: bash
       
     ## docker build image
@@ -97,4 +104,5 @@ jobs:
           docker stop $(docker ps -a -q) 
           docker rm $(docker ps -a -q) 
           docker pull ${{ secrets.DOCKER_USERNAME }}/timepay_admin
-          docker run -d -p 80:8080 --name admin_frontend ${{ secrets.DOCKER_USERNAME }}/timepay_admin
+          docker run -d -p 80:80 --name admin_frontend ${{ secrets.DOCKER_USERNAME }}/timepay_admin
+

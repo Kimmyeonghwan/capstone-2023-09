@@ -4,8 +4,9 @@
 
 ### 로컬 실행
 
-```shell
- yarn test
+```shell  
+ yarn install  
+ yarn start
 ```
 
 ### 빌드
@@ -16,16 +17,16 @@ yarn build
 
 ## 프로젝트 구조
 
-timepay-admin  
-┣ node_modules  
-┣ public  
+timepay-admin    
+┣ node_modules    
+┣ public     
 ┣ src  
 ┃ ┣ api  
 ┃ ┃ ┣ hooks // react-query hooks  
-┃ ┃ ┗ interfaces  
-┃ ┣ assets  
-┃ ┃ ┣ images  
-┃ ┃ ┗ icons  
+┃ ┃ ┗ interfaces // types  
+┃ ┣ assets    
+┃ ┃ ┗ images    
+┃ ┃   ┗ icons  // images  
 ┃ ┣ components  
 ┃ ┣ hooks // custom hooks  
 ┃ ┣ pages  
